@@ -12,11 +12,11 @@ My notes for Depth-Anything-V2 for Metric Depth Estimation.
 ## System setup
 ### Package
 ```commandline
-# Pytorch
-pip install "torch==2.9.1+cu128" "torchvision==0.24.1+cu128" --index-url https://download.pytorch.org/whl/cu128
-# xformers
-pip install -U xformers --index-url https://download.pytorch.org/whl/cu128 --no-deps
-# others
-pip install matplotlib
-pip install opencv-python
+pip install -r requirements.txt
 ```
+
+### Weights
+Download the checkpoints listed [**here**](https://github.com/DepthAnything/Depth-Anything-V2/tree/main/metric_depth#pre-trained-models) and put them under the `checkpoints` directory.
+
+## Script
+### run.py
