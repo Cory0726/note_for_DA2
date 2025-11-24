@@ -3,3 +3,4 @@ __pycache__/
 checkpoints/
 data/
 vis_depth_2meter/
+test_img/

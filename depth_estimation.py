@@ -89,15 +89,14 @@ def run_depth_anything(
             cv2.imwrite(output_path, combined_result)
 
 if __name__ == '__main__':
-    for i in range(2,41):
-        run_depth_anything(
-            img_path=f"./data/rbg_img_by_stream_{i:02d}.png",
-            input_size=518,
-            load_from="checkpoints/depth_anything_v2_metric_hypersim_vitl.pth",
-            outdir="./vis_depth_2meter",
-            encoder="vitl",
-            max_depth=20,
-            save_numpy=False,
-            grayscale=False,
-            pred_only=False
-        )
+    run_depth_anything(
+        img_path=f"test_img/M1_11_intensity_image.png",
+        input_size=518,
+        load_from="checkpoints/depth_anything_v2_metric_hypersim_vitl.pth",
+        outdir="./vis_depth_2meter",
+        encoder="vitl",
+        max_depth=5,
+        save_numpy=True,
+        grayscale=False,
+        pred_only=False
+    )
