@@ -16,12 +16,26 @@ My notes for Depth-Anything-V2 for Metric Depth Estimation.
 
 ## System setup
 ### Package
-```commandline
-pip install -r requirements.txt
 ```
+# torch, torchvison
+pip install torch==2.9.0 torchvision==0.24.0 --index-url https://download.pytorch.org/whl/cu126
+# xformers
+pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu126
 
+# matplotlib
+pip install matplotlib
+# opencv
+pip install opencv-python
+```
+### Issue
+#### Enable long paths in Windows 10, version 1607, and later
+- Windows official web : [Enable long paths in Windows 10, version 1607, and later](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#enable-long-paths-in-windows-10-version-1607-and-later)
+- Solution :
+```commandline
+New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+```
 ### Weights
 Download the checkpoints listed [**here**](https://github.com/DepthAnything/Depth-Anything-V2/tree/main/metric_depth#pre-trained-models) and put them under the `checkpoints` directory.
 
 ## Script
-### run.py
+### depth_estimation.py

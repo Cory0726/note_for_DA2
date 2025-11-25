@@ -90,10 +90,10 @@ def run_depth_anything(
 
 if __name__ == '__main__':
     run_depth_anything(
-        img_path=f"test_img/M1_11_intensity_image.png",
+        img_path=f"test_img/M1_09_intensity_image.png",
         input_size=518,
         load_from="checkpoints/depth_anything_v2_metric_hypersim_vitl.pth",
-        outdir="./vis_depth_2meter",
+        outdir="./Result_img",
         encoder="vitl",
         max_depth=5,
         save_numpy=True,
