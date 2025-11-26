@@ -4,6 +4,9 @@ My notes for Depth-Anything-V2 for Metric Depth Estimation.
 - [Reference](#reference)
 - [Introduction](#introduction)
 - [System setup](#system-setup)
+  - [Package](#package)
+  - [Issue](#issue)
+  - [Weights](#weights)
 - [Script](#script)
 
 ## Reference
