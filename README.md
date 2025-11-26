@@ -34,6 +34,13 @@ pip install opencv-python
 ```commandline
 New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
 ```
+#### ModuleNotFoundError: No module named triton
+- Install `triton` package for Windows system
+  - Step 1 : Download the Windows `triton` package at the [**HuggingFace**](https://hf-mirror.com/madbuda/triton-windows-builds)
+  - Step 2 : Install the `triton` package
+    ```commandline
+    pip install triton-3.0.0-cp312-cp312-win_amd64.whl
+    ```
 ### Weights
 Download the checkpoints listed [**here**](https://github.com/DepthAnything/Depth-Anything-V2/tree/main/metric_depth#pre-trained-models) and put them under the `checkpoints` directory.
 

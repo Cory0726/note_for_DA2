@@ -4,3 +4,4 @@ checkpoints/
 data/
 vis_depth_2meter/
 test_img/
+triton-3.0.0-cp312-cp312-win_amd64.whl
